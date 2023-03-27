@@ -3,6 +3,5 @@ pandas
 transformers
 torch
 streamlit
-gpt-index==0.4.40
 llama-index
 langchain
