@@ -2,8 +2,8 @@ import streamlit as st
 from transformers import pipeline
 import openai
 from PIL import Image
-openai.organization = "org-gjGFcDVcuXwEmPd8d451lKaK"
-openai.api_key = openai_key
+openai.organization = st.secrets["openai_organization_key"]
+openai.api_key = st.secrets["openai_key"]
 #openai.Model.list()
 pipeline = pipeline(task="image-classification", model="julien-c/hotdog-not-hotdog")
 
